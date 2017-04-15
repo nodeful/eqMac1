@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3017519B1B88F2DC0097693F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3017519A1B88F2DC0097693F /* Images.xcassets */; };
+		303E51631B86FEB200FC9AC9 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30FC806F1B755DA800F622AD /* AppController.mm */; };
+		305452781B793B30006F4A81 /* uninstall_script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 305452771B793B30006F4A81 /* uninstall_script.sh */; };
+		305452811B794112006F4A81 /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 305452801B794112006F4A81 /* STPrivilegedTask.m */; };
+		305496BB1B66EE4400ABC043 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305496B91B66EE4400ABC043 /* AudioToolbox.framework */; };
+		305496BC1B66EE4400ABC043 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305496BA1B66EE4400ABC043 /* AudioUnit.framework */; };
+		305496BE1B66EE4F00ABC043 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305496BD1B66EE4F00ABC043 /* Cocoa.framework */; };
+		305496C01B66EE5500ABC043 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305496BF1B66EE5500ABC043 /* CoreAudio.framework */; };
+		305496C21B66EE5E00ABC043 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305496C11B66EE5E00ABC043 /* IOKit.framework */; };
+		307912151B79656F0018EF86 /* install_script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 307912121B79656F0018EF86 /* install_script.sh */; };
+		307912161B79656F0018EF86 /* install_script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 307912121B79656F0018EF86 /* install_script.sh */; };
+		307A1B211B79447B00D56482 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307A1B201B79447B00D56482 /* Security.framework */; };
+		307C7C971B690B0C00540514 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307C7C961B690B0C00540514 /* QuartzCore.framework */; };
+		30846AE11B88C6220013A422 /* eqMacDriver.kext in Resources */ = {isa = PBXBuildFile; fileRef = 30846AE01B88C6220013A422 /* eqMacDriver.kext */; };
+		30846AE21B88C6220013A422 /* eqMacDriver.kext in Resources */ = {isa = PBXBuildFile; fileRef = 30846AE01B88C6220013A422 /* eqMacDriver.kext */; };
+		3088A3B51B8E0F280067BD2F /* editIconBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088A3B31B8E0F280067BD2F /* editIconBlack.png */; };
+		3088A3B61B8E0F280067BD2F /* editIconWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088A3B41B8E0F280067BD2F /* editIconWhite.png */; };
+		30FC80781B755DA800F622AD /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30FC806F1B755DA800F622AD /* AppController.mm */; };
+		30FC80791B755DA800F622AD /* AudioDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30FC80701B755DA800F622AD /* AudioDevice.cpp */; };
+		30FC807A1B755DA800F622AD /* AudioEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30FC80731B755DA800F622AD /* AudioEngine.mm */; };
+		30FC807B1B755DA800F622AD /* NSSliderExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FC80751B755DA800F622AD /* NSSliderExtensions.m */; };
+		30FC807C1B755DA800F622AD /* RingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30FC80761B755DA800F622AD /* RingBuffer.cpp */; };
+		30FC808F1B755DD300F622AD /* deleteIconBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC807D1B755DD300F622AD /* deleteIconBlack.png */; };
+		30FC80901B755DD300F622AD /* deleteIconWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC807E1B755DD300F622AD /* deleteIconWhite.png */; };
+		30FC80911B755DD300F622AD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30FC807F1B755DD300F622AD /* Info.plist */; };
+		30FC80921B755DD300F622AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FC80801B755DD300F622AD /* main.m */; };
+		30FC80931B755DD300F622AD /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 30FC80811B755DD300F622AD /* MainMenu.nib */; };
+		30FC80941B755DD300F622AD /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC80821B755DD300F622AD /* menuIcon.png */; };
+		30FC80951B755DD300F622AD /* resetButtonBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC80831B755DD300F622AD /* resetButtonBlack.png */; };
+		30FC80961B755DD300F622AD /* resetButtonWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC80841B755DD300F622AD /* resetButtonWhite.png */; };
+		30FC80971B755DD300F622AD /* saveIconBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC80851B755DD300F622AD /* saveIconBlack.png */; };
+		30FC80981B755DD300F622AD /* saveIconWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC80861B755DD300F622AD /* saveIconWhite.png */; };
+		30FC80991B755DD300F622AD /* volBlack0.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC80871B755DD300F622AD /* volBlack0.png */; };
+		30FC809A1B755DD300F622AD /* volBlack1-33.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC80881B755DD300F622AD /* volBlack1-33.png */; };
+		30FC809B1B755DD300F622AD /* volBlack33-66.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC80891B755DD300F622AD /* volBlack33-66.png */; };
+		30FC809C1B755DD300F622AD /* volBlack66-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC808A1B755DD300F622AD /* volBlack66-100.png */; };
+		30FC809D1B755DD300F622AD /* volWhite0.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC808B1B755DD300F622AD /* volWhite0.png */; };
+		30FC809E1B755DD300F622AD /* volWhite1-33.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC808C1B755DD300F622AD /* volWhite1-33.png */; };
+		30FC809F1B755DD300F622AD /* volWhite33-66.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC808D1B755DD300F622AD /* volWhite33-66.png */; };
+		30FC80A01B755DD300F622AD /* volWhite66-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC808E1B755DD300F622AD /* volWhite66-100.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3054969A1B66EC1500ABC043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3054967E1B66EC1500ABC043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 305496851B66EC1500ABC043;
+			remoteInfo = SoundflowerEQ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3017519A1B88F2DC0097693F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = eqMac/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		305452771B793B30006F4A81 /* uninstall_script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = uninstall_script.sh; sourceTree = "<group>"; };
+		3054527F1B794112006F4A81 /* STPrivilegedTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STPrivilegedTask.h; path = eqMac/STPrivilegedTask.h; sourceTree = SOURCE_ROOT; };
+		305452801B794112006F4A81 /* STPrivilegedTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STPrivilegedTask.m; path = eqMac/STPrivilegedTask.m; sourceTree = SOURCE_ROOT; };
+		305496861B66EC1500ABC043 /* eqMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eqMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		305496991B66EC1500ABC043 /* eqMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eqMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		305496B91B66EE4400ABC043 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		305496BA1B66EE4400ABC043 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		305496BD1B66EE4F00ABC043 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		305496BF1B66EE5500ABC043 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		305496C11B66EE5E00ABC043 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		307912121B79656F0018EF86 /* install_script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install_script.sh; sourceTree = "<group>"; };
+		307A1B201B79447B00D56482 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		307C7C961B690B0C00540514 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		30846AE01B88C6220013A422 /* eqMacDriver.kext */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.kernel-extension"; name = eqMacDriver.kext; path = eqMac/eqMacDriver.kext; sourceTree = SOURCE_ROOT; };
+		3088A3B31B8E0F280067BD2F /* editIconBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = editIconBlack.png; path = eqMac/editIconBlack.png; sourceTree = SOURCE_ROOT; };
+		3088A3B41B8E0F280067BD2F /* editIconWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = editIconWhite.png; path = eqMac/editIconWhite.png; sourceTree = SOURCE_ROOT; };
+		30FC806E1B755DA800F622AD /* AppController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AppController.hpp; path = eqMac/AppController.hpp; sourceTree = SOURCE_ROOT; };
+		30FC806F1B755DA800F622AD /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.objcpp; name = AppController.mm; path = eqMac/AppController.mm; sourceTree = SOURCE_ROOT; };
+		30FC80701B755DA800F622AD /* AudioDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioDevice.cpp; path = eqMac/AudioDevice.cpp; sourceTree = SOURCE_ROOT; };
+		30FC80711B755DA800F622AD /* AudioDevice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AudioDevice.hpp; path = eqMac/AudioDevice.hpp; sourceTree = SOURCE_ROOT; };
+		30FC80721B755DA800F622AD /* AudioEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.h; name = AudioEngine.hpp; path = eqMac/AudioEngine.hpp; sourceTree = SOURCE_ROOT; };
+		30FC80731B755DA800F622AD /* AudioEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.objcpp; name = AudioEngine.mm; path = eqMac/AudioEngine.mm; sourceTree = SOURCE_ROOT; };
+		30FC80741B755DA800F622AD /* NSSliderExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSSliderExtensions.h; path = eqMac/NSSliderExtensions.h; sourceTree = SOURCE_ROOT; };
+		30FC80751B755DA800F622AD /* NSSliderExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSSliderExtensions.m; path = eqMac/NSSliderExtensions.m; sourceTree = SOURCE_ROOT; };
+		30FC80761B755DA800F622AD /* RingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RingBuffer.cpp; path = eqMac/RingBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		30FC80771B755DA800F622AD /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RingBuffer.h; path = eqMac/RingBuffer.h; sourceTree = SOURCE_ROOT; };
+		30FC807D1B755DD300F622AD /* deleteIconBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = deleteIconBlack.png; path = eqMac/deleteIconBlack.png; sourceTree = SOURCE_ROOT; };
+		30FC807E1B755DD300F622AD /* deleteIconWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = deleteIconWhite.png; path = eqMac/deleteIconWhite.png; sourceTree = SOURCE_ROOT; };
+		30FC807F1B755DD300F622AD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = eqMac/Info.plist; sourceTree = SOURCE_ROOT; };
+		30FC80801B755DD300F622AD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = eqMac/main.m; sourceTree = SOURCE_ROOT; };
+		30FC80811B755DD300F622AD /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MainMenu.nib; path = eqMac/MainMenu.nib; sourceTree = SOURCE_ROOT; };
+		30FC80821B755DD300F622AD /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuIcon.png; path = eqMac/menuIcon.png; sourceTree = SOURCE_ROOT; };
+		30FC80831B755DD300F622AD /* resetButtonBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = resetButtonBlack.png; path = eqMac/resetButtonBlack.png; sourceTree = SOURCE_ROOT; };
+		30FC80841B755DD300F622AD /* resetButtonWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = resetButtonWhite.png; path = eqMac/resetButtonWhite.png; sourceTree = SOURCE_ROOT; };
+		30FC80851B755DD300F622AD /* saveIconBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = saveIconBlack.png; path = eqMac/saveIconBlack.png; sourceTree = SOURCE_ROOT; };
+		30FC80861B755DD300F622AD /* saveIconWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = saveIconWhite.png; path = eqMac/saveIconWhite.png; sourceTree = SOURCE_ROOT; };
+		30FC80871B755DD300F622AD /* volBlack0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = volBlack0.png; path = eqMac/volBlack0.png; sourceTree = SOURCE_ROOT; };
+		30FC80881B755DD300F622AD /* volBlack1-33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "volBlack1-33.png"; path = "eqMac/volBlack1-33.png"; sourceTree = SOURCE_ROOT; };
+		30FC80891B755DD300F622AD /* volBlack33-66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "volBlack33-66.png"; path = "eqMac/volBlack33-66.png"; sourceTree = SOURCE_ROOT; };
+		30FC808A1B755DD300F622AD /* volBlack66-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "volBlack66-100.png"; path = "eqMac/volBlack66-100.png"; sourceTree = SOURCE_ROOT; };
+		30FC808B1B755DD300F622AD /* volWhite0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = volWhite0.png; path = eqMac/volWhite0.png; sourceTree = SOURCE_ROOT; };
+		30FC808C1B755DD300F622AD /* volWhite1-33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "volWhite1-33.png"; path = "eqMac/volWhite1-33.png"; sourceTree = SOURCE_ROOT; };
+		30FC808D1B755DD300F622AD /* volWhite33-66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "volWhite33-66.png"; path = "eqMac/volWhite33-66.png"; sourceTree = SOURCE_ROOT; };
+		30FC808E1B755DD300F622AD /* volWhite66-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "volWhite66-100.png"; path = "eqMac/volWhite66-100.png"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		305496831B66EC1500ABC043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307A1B211B79447B00D56482 /* Security.framework in Frameworks */,
+				307C7C971B690B0C00540514 /* QuartzCore.framework in Frameworks */,
+				305496C21B66EE5E00ABC043 /* IOKit.framework in Frameworks */,
+				305496C01B66EE5500ABC043 /* CoreAudio.framework in Frameworks */,
+				305496BE1B66EE4F00ABC043 /* Cocoa.framework in Frameworks */,
+				305496BB1B66EE4400ABC043 /* AudioToolbox.framework in Frameworks */,
+				305496BC1B66EE4400ABC043 /* AudioUnit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305496961B66EC1500ABC043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3054967D1B66EC1500ABC043 = {
+			isa = PBXGroup;
+			children = (
+				307912121B79656F0018EF86 /* install_script.sh */,
+				305452771B793B30006F4A81 /* uninstall_script.sh */,
+				305496881B66EC1500ABC043 /* eqMac */,
+				305496C31B66F24C00ABC043 /* Frameworks */,
+				305496871B66EC1500ABC043 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		305496871B66EC1500ABC043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				305496861B66EC1500ABC043 /* eqMac.app */,
+				305496991B66EC1500ABC043 /* eqMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		305496881B66EC1500ABC043 /* eqMac */ = {
+			isa = PBXGroup;
+			children = (
+				30FC806E1B755DA800F622AD /* AppController.hpp */,
+				30FC806F1B755DA800F622AD /* AppController.mm */,
+				30FC80701B755DA800F622AD /* AudioDevice.cpp */,
+				30FC80711B755DA800F622AD /* AudioDevice.hpp */,
+				30FC80721B755DA800F622AD /* AudioEngine.hpp */,
+				30FC80731B755DA800F622AD /* AudioEngine.mm */,
+				30FC80741B755DA800F622AD /* NSSliderExtensions.h */,
+				30FC80751B755DA800F622AD /* NSSliderExtensions.m */,
+				30FC80761B755DA800F622AD /* RingBuffer.cpp */,
+				30FC80771B755DA800F622AD /* RingBuffer.h */,
+				3054527F1B794112006F4A81 /* STPrivilegedTask.h */,
+				305452801B794112006F4A81 /* STPrivilegedTask.m */,
+				3017519A1B88F2DC0097693F /* Images.xcassets */,
+				305496891B66EC1500ABC043 /* Supporting Files */,
+			);
+			name = eqMac;
+			path = SoundflowerEQ;
+			sourceTree = "<group>";
+		};
+		305496891B66EC1500ABC043 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3088A3B31B8E0F280067BD2F /* editIconBlack.png */,
+				3088A3B41B8E0F280067BD2F /* editIconWhite.png */,
+				30846AE01B88C6220013A422 /* eqMacDriver.kext */,
+				30FC807D1B755DD300F622AD /* deleteIconBlack.png */,
+				30FC807E1B755DD300F622AD /* deleteIconWhite.png */,
+				30FC807F1B755DD300F622AD /* Info.plist */,
+				30FC80801B755DD300F622AD /* main.m */,
+				30FC80811B755DD300F622AD /* MainMenu.nib */,
+				30FC80821B755DD300F622AD /* menuIcon.png */,
+				30FC80831B755DD300F622AD /* resetButtonBlack.png */,
+				30FC80841B755DD300F622AD /* resetButtonWhite.png */,
+				30FC80851B755DD300F622AD /* saveIconBlack.png */,
+				30FC80861B755DD300F622AD /* saveIconWhite.png */,
+				30FC80871B755DD300F622AD /* volBlack0.png */,
+				30FC80881B755DD300F622AD /* volBlack1-33.png */,
+				30FC80891B755DD300F622AD /* volBlack33-66.png */,
+				30FC808A1B755DD300F622AD /* volBlack66-100.png */,
+				30FC808B1B755DD300F622AD /* volWhite0.png */,
+				30FC808C1B755DD300F622AD /* volWhite1-33.png */,
+				30FC808D1B755DD300F622AD /* volWhite33-66.png */,
+				30FC808E1B755DD300F622AD /* volWhite66-100.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		305496C31B66F24C00ABC043 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				307A1B201B79447B00D56482 /* Security.framework */,
+				307C7C961B690B0C00540514 /* QuartzCore.framework */,
+				305496C11B66EE5E00ABC043 /* IOKit.framework */,
+				305496BF1B66EE5500ABC043 /* CoreAudio.framework */,
+				305496BD1B66EE4F00ABC043 /* Cocoa.framework */,
+				305496B91B66EE4400ABC043 /* AudioToolbox.framework */,
+				305496BA1B66EE4400ABC043 /* AudioUnit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		305496851B66EC1500ABC043 /* eqMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305496A31B66EC1500ABC043 /* Build configuration list for PBXNativeTarget "eqMac" */;
+			buildPhases = (
+				305496821B66EC1500ABC043 /* Sources */,
+				305496831B66EC1500ABC043 /* Frameworks */,
+				305496841B66EC1500ABC043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eqMac;
+			productName = SoundflowerEQ;
+			productReference = 305496861B66EC1500ABC043 /* eqMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		305496981B66EC1500ABC043 /* eqMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305496A61B66EC1500ABC043 /* Build configuration list for PBXNativeTarget "eqMacTests" */;
+			buildPhases = (
+				305496951B66EC1500ABC043 /* Sources */,
+				305496961B66EC1500ABC043 /* Frameworks */,
+				305496971B66EC1500ABC043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3054969B1B66EC1500ABC043 /* PBXTargetDependency */,
+			);
+			name = eqMacTests;
+			productName = SoundflowerEQTests;
+			productReference = 305496991B66EC1500ABC043 /* eqMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3054967E1B66EC1500ABC043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = bitgapp;
+				TargetAttributes = {
+					305496851B66EC1500ABC043 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = JZA6C97KJA;
+					};
+					305496981B66EC1500ABC043 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 305496811B66EC1500ABC043 /* Build configuration list for PBXProject "eqMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3054967D1B66EC1500ABC043;
+			productRefGroup = 305496871B66EC1500ABC043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				305496851B66EC1500ABC043 /* eqMac */,
+				305496981B66EC1500ABC043 /* eqMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		305496841B66EC1500ABC043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FC808F1B755DD300F622AD /* deleteIconBlack.png in Resources */,
+				30846AE11B88C6220013A422 /* eqMacDriver.kext in Resources */,
+				30FC80971B755DD300F622AD /* saveIconBlack.png in Resources */,
+				30FC809A1B755DD300F622AD /* volBlack1-33.png in Resources */,
+				30FC809C1B755DD300F622AD /* volBlack66-100.png in Resources */,
+				30FC80981B755DD300F622AD /* saveIconWhite.png in Resources */,
+				3088A3B61B8E0F280067BD2F /* editIconWhite.png in Resources */,
+				30FC809F1B755DD300F622AD /* volWhite33-66.png in Resources */,
+				30FC80931B755DD300F622AD /* MainMenu.nib in Resources */,
+				30FC809B1B755DD300F622AD /* volBlack33-66.png in Resources */,
+				30FC80A01B755DD300F622AD /* volWhite66-100.png in Resources */,
+				30FC80941B755DD300F622AD /* menuIcon.png in Resources */,
+				30FC80951B755DD300F622AD /* resetButtonBlack.png in Resources */,
+				30FC80991B755DD300F622AD /* volBlack0.png in Resources */,
+				30FC80901B755DD300F622AD /* deleteIconWhite.png in Resources */,
+				3017519B1B88F2DC0097693F /* Images.xcassets in Resources */,
+				307912151B79656F0018EF86 /* install_script.sh in Resources */,
+				30FC80911B755DD300F622AD /* Info.plist in Resources */,
+				30FC809E1B755DD300F622AD /* volWhite1-33.png in Resources */,
+				3088A3B51B8E0F280067BD2F /* editIconBlack.png in Resources */,
+				30FC809D1B755DD300F622AD /* volWhite0.png in Resources */,
+				30FC80961B755DD300F622AD /* resetButtonWhite.png in Resources */,
+				305452781B793B30006F4A81 /* uninstall_script.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305496971B66EC1500ABC043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307912161B79656F0018EF86 /* install_script.sh in Resources */,
+				30846AE21B88C6220013A422 /* eqMacDriver.kext in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		305496821B66EC1500ABC043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FC807B1B755DA800F622AD /* NSSliderExtensions.m in Sources */,
+				30FC80781B755DA800F622AD /* AppController.mm in Sources */,
+				30FC80791B755DA800F622AD /* AudioDevice.cpp in Sources */,
+				30FC807A1B755DA800F622AD /* AudioEngine.mm in Sources */,
+				30FC80921B755DD300F622AD /* main.m in Sources */,
+				305452811B794112006F4A81 /* STPrivilegedTask.m in Sources */,
+				30FC807C1B755DA800F622AD /* RingBuffer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305496951B66EC1500ABC043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303E51631B86FEB200FC9AC9 /* AppController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3054969B1B66EC1500ABC043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 305496851B66EC1500ABC043 /* eqMac */;
+			targetProxy = 3054969A1B66EC1500ABC043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		305496A11B66EC1500ABC043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Romans Kisils (JZA6C97KJA)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		305496A21B66EC1500ABC043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Romans Kisils (JZA6C97KJA)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		305496A41B66EC1500ABC043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Romans Kisils (JZA6C97KJA)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_LOCATION = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = eqMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)/eqMac/";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = eqMac;
+				SDKROOT = macosx10.11;
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Who-unknown-pragmas",
+					"-Wno-four-char-constants",
+					"-Wmost",
+				);
+			};
+			name = Debug;
+		};
+		305496A51B66EC1500ABC043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Romans Kisils (JZA6C97KJA)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = eqMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)/eqMac/";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = eqMac;
+				SDKROOT = macosx10.11;
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Who-unknown-pragmas",
+					"-Wno-four-char-constants",
+					"-Wmost",
+				);
+			};
+			name = Release;
+		};
+		305496A71B66EC1500ABC043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = eqMacTests/Info.plist;
+				INSTALL_PATH = "~/Applications/";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = eqMacTests;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		305496A81B66EC1500ABC043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = eqMacTests/Info.plist;
+				INSTALL_PATH = "~/Applications/";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = eqMacTests;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		305496811B66EC1500ABC043 /* Build configuration list for PBXProject "eqMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305496A11B66EC1500ABC043 /* Debug */,
+				305496A21B66EC1500ABC043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		305496A31B66EC1500ABC043 /* Build configuration list for PBXNativeTarget "eqMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305496A41B66EC1500ABC043 /* Debug */,
+				305496A51B66EC1500ABC043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		305496A61B66EC1500ABC043 /* Build configuration list for PBXNativeTarget "eqMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305496A71B66EC1500ABC043 /* Debug */,
+				305496A81B66EC1500ABC043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3054967E1B66EC1500ABC043 /* Project object */;
+}
